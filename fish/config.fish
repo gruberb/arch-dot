@@ -1,6 +1,10 @@
 set -Ux QT_QPA_PLATFORM "wayland"
 set -Ux OBSIDIAN_USE_WAYLAND 1
 
+set -x GPG_TTY (tty)
+
+set -x NVM_DIR $HOME/.nvm
+
 # Automatically start Sway on virtual terminal 1 if not already under Wayland
 if test -z "$WAYLAND_DISPLAY" -a "$XDG_VTNR" = 1
   exec sway
