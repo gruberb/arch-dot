@@ -1,8 +1,9 @@
-theme = "onedark"
+theme = "ayu_mirage"
 
 [editor]
 line-number = "relative"
 mouse = false
+true-color = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -11,3 +12,4 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
